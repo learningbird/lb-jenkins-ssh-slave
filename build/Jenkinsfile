@@ -1,0 +1,19 @@
+pipeline {
+    agent {
+        node {
+            label 'docker'
+        }
+    }
+    stages {
+        stage('Build image') {
+            steps {
+                sh 'bash build/build-image.sh'
+            }
+        }
+        stage('Push image') {
+            steps {
+                sh 'bash build/push-image.sh'
+            }
+        }
+    }
+}
