@@ -1,5 +1,5 @@
-# lb-transcode-video
-The repository for the lb-transcode-video container
+# lb-jenkins-ssh-slave
+The repository for the lb-jenkins-ssh-slave container
 
 # Building
 To build this image, tag the commit with your changes and push the tag. Jenkins will pick it up and start building
