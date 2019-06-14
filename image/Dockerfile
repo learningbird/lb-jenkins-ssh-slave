@@ -48,4 +48,4 @@ ENTRYPOINT ["/usr/local/bin/setup-sshd"]
 
 # Install aws
 RUN apt update && apt install -y python3 python-pip jq gawk sshpass nano vim ruby
-RUN pip install awscli --upgrade
+RUN pip install awscli==1.16.178 --upgrade
